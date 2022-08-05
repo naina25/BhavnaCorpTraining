@@ -1,0 +1,94 @@
+create database ecommerce
+use ecommerce
+
+create table products(id int primary key identity(100,1),name nvarchar(20),brand nvarchar(20),quantity numeric(20))
+insert into products values('Mobile','Oneplus',5627)
+insert into products values('Mobile','Apple',10567)
+insert into products values('Mobile','Samsung',2537)
+insert into products values('Speakers','Boat',87129)
+insert into products values('Speakers','Sony',72368)
+insert into products values('Smart Watches','Fossil',27534)
+insert into products values('Smart Watches','Boat',7816)
+insert into products values('Smart Watches','Samsung',98327)
+insert into products values('Laptop','Dell',12578)
+insert into products values('Laptop','HP',4979)
+
+select * from products
+
+create table customer(id int primary key identity(100,1),customer_name nvarchar(20),address nvarchar(20),age numeric(20))
+insert into customer values('Devashish','Lucknow',25)
+insert into customer values('Amit','Kanpur',27)
+insert into customer values('Ajay','Delhi',21)
+insert into customer values('Arun','Noida',20)
+insert into customer values('Anurag','Allahabad',21)
+insert into customer values('Anoop','Jaipur',24)
+insert into customer values('Harshit','Mumbai',28)
+insert into customer values('Shikhar','Lucknow',19)
+insert into customer values('Anjali','Noida',28)
+insert into customer values('Naina','Moradabad',29)
+
+select * from customer
+
+create table orders(id int primary key identity(100,1),OrderedBy nvarchar(20), status nvarchar(20))
+insert into orders values('Amit','Out for Delivery')
+insert into orders values('Anoop','packing')
+insert into orders values('Harshit','Out for Delivery')
+insert into orders values('Naina','Arriving soon')
+insert into orders values('Arun','Out for Delivery')
+insert into orders values('Devesh','packing')
+insert into orders values('Ajay','packing')
+insert into orders values('Anjali','Out for Delivery')
+insert into orders values('Shikhar','packing')
+insert into orders values('Anurag','Arriving soon')
+
+select * from orders
+
+create table accounts(id int primary key identity(100,1),amount numeric(20),balance_Left numeric(20))
+insert into accounts values(25000,657)
+insert into accounts values(986666,9)
+insert into accounts values(65000,27)
+insert into accounts values(23000,65)
+insert into accounts values(87666,788)
+insert into accounts values(31000,90)
+insert into accounts values(7655,6231)
+insert into accounts values(2400,43)
+insert into accounts values(87999,7762)
+insert into accounts values(98777,0)
+
+select * from accounts
+
+CREATE VIEW CUSTOMER_VIEW
+AS
+select p.name,p.brand,c.customer_name
+from products  p
+,customer  c where
+p.id = c.id
+
+select * from CUSTOMER_VIEW
+
+CREATE VIEW Order_VIEW
+AS
+select c.customer_name,c.address,o.status
+from customer  c 
+,orders o where
+c.id = o.id
+
+select * from Order_VIEW
+
+CREATE VIEW Account_VIEW
+AS
+select customer_name,address ,age,amount,balance_Left
+from customer c
+,accounts  a where
+c.id = a.id
+
+select * from Account_VIEW
+
+CREATE VIEW Products_VIEW
+AS
+select OrderedBy ,name,brand,status
+from products  p
+, orders  o where
+p.id = o.id
+
+select * from Products_VIEW
