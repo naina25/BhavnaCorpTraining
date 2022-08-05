@@ -1,0 +1,75 @@
+use ecommerce
+
+select * from accounts
+
+select * from customer
+
+select * from orders
+
+select * from products
+
+--equals to
+select * from accounts where id=107
+
+--not equals
+select * from products where id!=107
+
+--greater than
+select * from products where quantity>10000
+
+--less than
+select * from products where quantity<10000
+
+--union
+select customer_name from customer
+union
+select OrderedBy from orders
+
+--intersect
+select customer_name from customer
+intersect
+select OrderedBy from orders
+
+--in operator
+select * from products
+where name in ('Mobile', 'Laptop')
+
+--or
+select * from products
+where name='Mobile' or name='Laptop'
+
+--and
+select * from products
+where name='Mobile' and quantity>10000
+
+--not in
+select * from products
+where name not in ('Mobile', 'Laptop')
+
+--between
+select * from products
+where quantity between 10000 and 30000
+
+--is null
+select * from accounts where balance_left is null
+
+-- isNot null
+select * from accounts where balance_left is not null
+
+--like 
+select * from customer
+where customer_name like '%n%'
+
+--wildcard
+select * from customer
+where customer_name like '[D,H]%'
+
+--exist
+select * from customer
+where exists (select * from orders where customer.customer_name = orders.OrderedBy)
+
+--inner join
+select c.customer_name as Name, c.address as Address, c.age as Age, o.status as Order_Status
+from customer c
+inner join
+orders o on c.customer_name = o.OrderedBy
