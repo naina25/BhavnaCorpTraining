@@ -1,0 +1,263 @@
+create database brands_db
+use brands_db
+
+-- Creating tables
+
+create table brands(id int primary key identity, brand_name nvarchar(20), founding_year int)
+create table celebs(id int primary key identity, celeb_name nvarchar(50), gender nvarchar(20), age int)
+create table brand_endorsments(id int primary key identity, brand_id int, celeb_id int,
+constraint fk_end_brandID
+foreign key (brand_id)
+references brands (id),
+
+constraint fk_end_celebID
+foreign key (celeb_id)
+references celebs (id)
+)
+
+-- Creating procedure for/and inserting values into brands table
+
+create procedure sp_insertBrand
+(
+@brand_name nvarchar(20),
+@founding_year int
+)
+as
+begin
+insert into brands(brand_name,founding_year) values (@brand_name, @founding_year)
+end
+
+exec sp_insertBrand
+@brand_name='Armani',
+@founding_year=1987
+
+exec sp_insertBrand
+@brand_name='Fendi',
+@founding_year=1963
+
+exec sp_insertBrand
+@brand_name='Gucci',
+@founding_year=1951
+
+exec sp_insertBrand
+@brand_name='Prada',
+@founding_year=1960
+
+exec sp_insertBrand
+@brand_name='Versace',
+@founding_year=1937
+
+exec sp_insertBrand
+@brand_name='Nike',
+@founding_year=1940
+
+exec sp_insertBrand
+@brand_name='Chanel',
+@founding_year=1983
+
+exec sp_insertBrand
+@brand_name='Dior',
+@founding_year=1961
+
+exec sp_insertBrand
+@brand_name='Under Armour',
+@founding_year=2013
+
+exec sp_insertBrand
+@brand_name='Gap',
+@founding_year=1988
+
+select * from brands
+
+
+
+-- Creating procedure for/and inserting values into celebs table
+
+create procedure sp_insertCeleb
+(
+@celeb_name nvarchar(50),
+@gender nvarchar(20),
+@age int
+)
+as
+begin
+insert into celebs(celeb_name,gender,age) values (@celeb_name, @gender, @age)
+end
+
+exec sp_insertCeleb
+@celeb_name='Johnny Depp',
+@gender='Male',
+@age=53
+
+exec sp_insertCeleb
+@celeb_name='Dwayne Johnson',
+@gender='Male',
+@age=47
+
+exec sp_insertCeleb
+@celeb_name='Rihanna',
+@gender='Female',
+@age=36
+
+exec sp_insertCeleb
+@celeb_name='Leonardo DiCaprio',
+@gender='Male',
+@age=51
+
+exec sp_insertCeleb
+@celeb_name='Beyonce',
+@gender='Female',
+@age=49
+
+exec sp_insertCeleb
+@celeb_name='George Clooney',
+@gender='Male',
+@age=58
+
+exec sp_insertCeleb
+@celeb_name='Gigi Hadid',
+@gender='Female',
+@age=26
+
+exec sp_insertCeleb
+@celeb_name='Tiger Woods',
+@gender='Male',
+@age=48
+
+exec sp_insertCeleb
+@celeb_name='David Beckham',
+@gender='Male',
+@age=55
+
+exec sp_insertCeleb
+@celeb_name='Kendall Jenner',
+@gender='Female',
+@age=27
+
+select * from celebs
+
+
+-- Creating procedure for/and inserting values into brand_endorsements table
+
+create procedure sp_insertEndorse
+(
+@brand_id int,
+@celeb_id int
+)
+as
+begin
+insert into brand_endorsments(brand_id,celeb_id) values (@brand_id, @celeb_id)
+end
+
+exec sp_insertEndorse
+@brand_id=1,
+@celeb_id=3
+
+exec sp_insertEndorse
+@brand_id=5,
+@celeb_id=1
+
+exec sp_insertEndorse
+@brand_id=2,
+@celeb_id=6
+
+exec sp_insertEndorse
+@brand_id=6,
+@celeb_id=4
+
+exec sp_insertEndorse
+@brand_id=3,
+@celeb_id=1
+
+exec sp_insertEndorse
+@brand_id=1,
+@celeb_id=8
+
+exec sp_insertEndorse
+@brand_id=10,
+@celeb_id=3
+
+exec sp_insertEndorse
+@brand_id=4,
+@celeb_id=2
+
+exec sp_insertEndorse
+@brand_id=6,
+@celeb_id=4
+
+exec sp_insertEndorse
+@brand_id=10,
+@celeb_id=8
+
+
+select * from brand_endorsments
+
+
+
+-- Brands which are not endorsed by any celebrities
+
+
+create procedure sp_notEndorsed
+as
+begin
+
+select b.* 
+from brands b 
+left join brand_endorsments be 
+on b.id=be.brand_id 
+where be.id is null
+
+end
+
+exec sp_notEndorsed
+
+
+-- Common brands endorsed by celebrities
+
+
+create procedure sp_commonBrands
+as 
+begin
+
+select b.brand_name from brand_endorsments as be
+inner join brands as b
+on be.brand_id=b.id 
+group by b.brand_name
+having count(b.brand_name)>1
+
+end
+
+exec sp_commonBrands
+
+
+
+-- Celebrities not endorsing any brands
+
+create procedure sp_noEndorsement
+as
+begin
+
+select c.celeb_name from brand_endorsments as be
+right join celebs as c
+on be.celeb_id=c.id
+where be.celeb_id is null
+
+end
+
+exec sp_noEndorsement
+
+-- Celebrities endorsing multiple brands
+
+create procedure sp_commonCelebrities
+as
+begin
+
+select c.celeb_name from brand_endorsments as be
+inner join celebs as c
+on be.celeb_id=c.id 
+group by c.celeb_name
+having count(c.celeb_name)>1
+
+end
+
+exec sp_commonCelebrities
