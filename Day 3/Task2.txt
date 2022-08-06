@@ -1,0 +1,79 @@
+create database ecommerce_db
+
+use ecommerce_db
+
+/*cCreate tables */
+create table products(id int primary key identity(1,1), name nvarchar(20), price numeric(18,0), quantity int);
+
+insert into products values('iPhone 13', '69990', 170)
+insert into products values('iPhone 13 Pro', '89990', 130)
+insert into products values('iPhone 13 Pro Max', '119990', 70)
+insert into products values('iPhone 13 Mini', '59990', 150)
+insert into products values('Galaxy S22', '99990', 80)
+insert into products values('OnePlus 10', '89990', 132)
+insert into products values('Galaxy S21', '74490', 370)
+insert into products values('OnePlus Nord', '49990', 58)
+insert into products values('Nothing Phone(1)', '93500', 20)
+insert into products values('Galaxy M51', '29990', 90)
+
+select * from products
+
+
+
+create table customer(id int primary key identity(101,1), name nvarchar(20), gender nvarchar(10), age int, city nvarchar(20));
+
+insert into customer values('Devesh', 'Male', 23, 'Lucknow')
+insert into customer values('Shivam', 'Male', 22, 'Etawa')
+insert into customer values('Anjali', 'Female', 21, 'Delhi')
+insert into customer values('Arpit', 'Male', 25, 'Noida')
+insert into customer values('Atul', 'Male', 30, 'Jaipur')
+insert into customer values('Naina', 'Female', 29, 'Moradabad')
+insert into customer values('Vanshika', 'Female', 21, 'Lucknow')
+insert into customer values('Vidushi', 'Female', 24, 'Delhi')
+insert into customer values('Apoorva', 'Female', 28, 'Greater Noida')
+insert into customer values('Harshit', 'Male', 27, 'Kanpur')
+
+select * from customer
+
+
+create table orders(id int primary key identity(1,1), product_id int NOT NULL, customer_id int NOT NULL, payment_mode nvarchar(20),
+constraint fk_ord_product_id 
+foreign key (product_id)
+references products (id),
+constraint fk_ord_customer_id 
+foreign key (customer_id)
+references customer (id)
+)
+
+insert into orders values(4, 108, 'COD')
+insert into orders values(1, 104, 'Online')
+insert into orders values(4, 101, 'Card')
+insert into orders values(8, 102, 'Online')
+insert into orders values(5, 109, 'COD')
+insert into orders values(1, 106, 'COD')
+insert into orders values(6, 101, 'Card')
+insert into orders values(3, 107, 'Card')
+insert into orders values(7, 102, 'Online')
+insert into orders values(5, 108, 'COD')
+
+select * from orders
+
+/* Max */
+select name, price, quantity from products where price in
+(select max(price) from products)
+
+/* Min */
+select name, price, quantity from products where price in
+(select min(price) from products)
+
+/* Group by */
+select count(*) as 'Gender Count', gender from customer group by gender
+
+/* Order by */
+select * from customer order by age, name desc
+
+/* Having */
+select count(*) as 'Gender Count', gender from customer group by gender having gender = 'Male'
+
+/* Offset - 3rd highest priced product */
+select * from products order by price desc offset 2 rows fetch next 1 rows only
