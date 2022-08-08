@@ -1,0 +1,131 @@
+use brands_db
+
+select * from brands
+
+-- Brands triggers
+
+create table brand_logs(LogID int primary key identity, brand_id int,  operation nvarchar(20), updateddate Datetime)
+select * from brand_logs
+
+-- Brands insert trigger
+
+create trigger BrandInsertTrigger
+on brands
+for insert
+as
+insert into brand_logs(brand_id,operation,updateddate)
+select id,'Data Inserted', GETDATE() from inserted
+
+-- Brands update trigger
+
+
+create trigger BrandUpdateTrigger
+on brands
+after update
+as
+insert into brand_logs(brand_id,operation,updateddate)
+select id,'Data Updated', GETDATE() from deleted
+
+update brands set founding_year=1908 where id=11
+
+-- Brands delete trigger
+
+
+create trigger BrandDeleteTrigger
+on brands
+instead of delete
+as
+insert into brand_logs(brand_id,operation,updateddate)
+select id,'Data to be Deleted', GETDATE() from deleted
+
+delete from brands where id=10
+
+
+
+-- Celebs triggers
+select * from celebs
+
+create table celeb_logs(LogID int primary key identity, celeb_id int,  operation nvarchar(20), updateddate Datetime)
+select * from celeb_logs
+
+-- Celebs insert trigger
+
+create trigger CelebInsertTrigger
+on celebs
+for insert
+as
+insert into celeb_logs(celeb_id,operation,updateddate)
+select id,'Data Inserted', GETDATE() from inserted
+
+exec sp_insertCeleb
+@celeb_name='Brad Pitt',
+@gender='Male',
+@age=56
+
+-- Celebs update trigger
+
+create trigger CelebUpdateTrigger
+on celebs
+after update
+as
+insert into celeb_logs(celeb_id,operation,updateddate)
+select id,'Data Updated', GETDATE() from deleted
+
+update celebs set age=39 where id=9
+
+
+-- Celebs delete trigger
+
+create trigger CelebDeleteTrigger
+on celebs
+instead of delete
+as
+insert into celeb_logs(celeb_id,operation,updateddate)
+select id,'Data to be Deleted', GETDATE() from deleted
+
+delete from celebs where id=7
+
+
+-- Endrosement Triggers
+
+select * from brand_endorsments
+
+create table endorsement_logs(LogID int primary key identity, endorsement_id int,  operation nvarchar(20), updateddate Datetime)
+select * from endorsement_logs
+
+-- Endorsements insert trigger
+
+create trigger EndorsementInsertTrigger
+on brand_endorsments
+for insert
+as
+insert into endorsement_logs(endorsement_id,operation,updateddate)
+select id,'Data Inserted', GETDATE() from inserted
+
+exec sp_insertEndorse
+@brand_id=5,
+@celeb_id=11
+
+-- Endorsement update trigger
+
+
+create trigger EndorsementUpdateTrigger
+on brand_endorsments
+after update
+as
+insert into endorsement_logs(endorsement_id,operation,updateddate)
+select id,'Data Updated', GETDATE() from deleted
+
+update brand_endorsments set brand_id=8 where id=6
+
+-- Endorsement delete trigger
+
+
+create trigger EndorsementDeleteTrigger
+on brand_endorsments
+instead of delete
+as
+insert into endorsement_logs(endorsement_id,operation,updateddate)
+select id,'Data to be Deleted', GETDATE() from deleted
+
+delete from brand_endorsments where id=2
