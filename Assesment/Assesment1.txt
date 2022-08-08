@@ -1,0 +1,104 @@
+create database Airlines
+
+use Airlines
+
+create table employees(empid int primary key not null identity(101,1), fullName nvarchar(50), flightid int, constraint fk_flight foreign key(flightid) references flights(flightid))
+
+create table flights(flightid int primary key not null identity(1,1), flightname nvarchar(20), fromCity nvarchar(20), toCity nvarchar(20), seatingCapacity int)
+
+create table passenger(passid int primary key not null identity(201,1), passName nvarchar(50), flightid int, seatNo nvarchar(20), constraint fk_flightid foreign key(flightid) references flights(flightid))
+
+drop table passenger
+drop table flights
+
+insert into flights values('Air Bus 190', 'Mumbai', 'Kolkata', 500)
+insert into flights values('Air Bus 191', 'Delhi', 'Jaipur', 400)
+insert into flights values('Air Bus 192', 'Mumbai', 'Bangalore', 520)
+insert into flights values('Air Bus 193', 'Bangalore', 'Raipur', 380)
+insert into flights values('Air Bus 194', 'Mumbai', 'Delhi', 372)
+insert into flights values('Air Bus 195', 'Lucknow', 'Jaipur', 460)
+insert into flights values('Air Bus 196', 'Moradabad', 'Lucknow', 780)
+insert into flights values('Air Bus 197', 'Bareilly', 'Gandhinagar', 328)
+insert into flights values('Air Bus 198', 'Ahemdabad', 'Ludhiana', 557)
+insert into flights values('Air Bus 199', 'Jaipur', 'Udaipur', 530)
+
+select * from flights
+select * from employees
+
+
+insert into passenger values('Naina Upadhyay', 1, 'D5')
+insert into passenger values('Yash Upadhyay', 2, 'D2')
+insert into passenger values('Neha bajpai', 3, 'E5')
+insert into passenger values('Anjali Saini', 4, 'A3')
+insert into passenger values('Bhavya Gupta', 5, 'S8')
+insert into passenger values('Anuj Gupta', 6, 'W5')
+insert into passenger values('Kartik Singh', 7, 'A5')
+insert into passenger values('Akanksha Sharma', 8, 'F2')
+insert into passenger values('Vaishnavi Mudgal', 9, 'D1')
+insert into passenger values('Kiran Kapoor', 10, 'B5')
+
+select * from passenger
+
+insert into employees values('Kashish Kumar', 1)
+insert into employees values('Itisha Verma', 3)
+insert into employees values('Rihan Gupta', 2)
+insert into employees values('Virat Kholi', 5)
+insert into employees values('Ravi kumar', 7)
+insert into employees values('Karan Sharma', 4)
+insert into employees values('Vanshika Verma', 6)
+insert into employees values('Vartika Singh', 10)
+insert into employees values('Ayushi Dutta', 8)
+insert into employees values('Akanshi Singh', 9)
+
+
+create procedure sp_flights
+as
+begin
+select * from flights
+end
+
+exec sp_flights
+
+create procedure sp_passengers
+as
+begin
+select * from passenger
+end
+
+exec sp_passengers
+
+create procedure sp_employess
+as
+begin
+select * from employees
+end
+
+exec sp_employess
+
+create procedure sp_passenger_filghts
+as
+begin
+
+select 
+p.passName as passenger, 
+f.flightname as flight_Name 
+from passenger p inner join flights f 
+on p.flightid = f.flightid
+
+end
+
+exec sp_passenger_filghts
+
+create procedure sp_employee_filghts
+as
+begin
+
+select 
+E.fullName as Employee, 
+f.flightname as flight_Name 
+from employees E inner join flights f 
+on E.flightid = f.flightid
+
+end
+
+exec sp_employee_filghts
