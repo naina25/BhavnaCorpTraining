@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- jumbotron -->
+
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    </div>
+    <div class="container">
+        <div class="card mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="Imgs/adam-kool-ndN00KmbJ1c-unsplash.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card 1</h5>
+              <p class="card-text">This is Card 1</p>
+              <a href="#" class="btn btn-primary">Go Somewhere</a>
+            </div>
+        </div>
+        <div class="card mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="Imgs/david-marcu-78A265wPiO4-unsplash.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card 2</h5>
+              <p class="card-text">This is Card 2</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="Imgs/tim-swaan-eOpewngf68w-unsplash.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">This is Card 3</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid mx-3">
+        <h2>Click the button to get your coordinates.</h2>
+
+		<button onclick="getLocation()">Location</button>
+
+		<p id="demo"></p>
+    </div>
+    
+    <div class="container mx-3">
+        <div class="row">
+            <div class="map col-sm">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13249.247068040606!2d151.20960562674117!3d-33.8816236491114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1468899355787" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm">
+                <h2>CONTACT US</h2>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Full Name</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Feedback</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+            
+        </div>
+        
+        
+        
+        
+    </div>
+
+
+		<script>
+			var x = document.getElementById("demo");
+
+			function getLocation() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition);
+				} else {
+					x.innerHTML =
+						"Geolocation is not supported by this browser.";
+				}
+			}
+            function showPosition(position) {
+				x.innerHTML =
+					"Latitude: " +
+					position.coords.latitude +
+					"<br>Longitude: " +
+					position.coords.longitude;
+			}
+		</script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
