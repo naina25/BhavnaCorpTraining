@@ -1,0 +1,522 @@
+<!doctype html>  
+<html lang="en">  
+   <head>  
+      <meta charset="utf-8">  
+      <title>jQuery UI Accordion Example </title>  
+      <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+      <script>  
+         $(function() {  
+            $( "#accordion-5" ).accordion({  
+               disabled: false  
+            });  
+            $("input").each(function () {  
+               $(this).change(function () {  
+                  if ($(this).attr("id") == "disableaccordion") {  
+                     $("#accordion-5").accordion("option", "disabled", true);  
+                  } else {  
+                     $("#accordion-5").accordion("option", "disabled", false);  
+                  }  
+               });  
+            });  
+         });  
+         $(function() {  
+            $( "#button-6" ).button({  
+               icons: {  
+                  primary: "ui-icon-locked"  
+               },  
+               text: false  
+            });  
+            $( "#button-7" ).button({  
+               disabled:true  
+            });  
+            $( "#button-8" ).button({  
+               icons: {  
+                  primary: "ui-icon-gear",  
+                  secondary: "ui-icon-triangle-1-s"  
+               }  
+            });  
+         });
+         $(function() {  
+            $( "#datepicker-1" ).datepicker();  
+         });
+         $(function() {  
+            $( "#slider-2" ).slider({  
+               value: 60,  
+               animate:"slow",  
+               orientation: "horizontal"  
+            });  
+         });
+         $(function() {  
+            function runEffect() {  
+               $( "#effect-1" ).hide( "shake", {times: 10, distance: 200}, 1000, callback );  
+            };  
+            // callback function to bring a hidden box back  
+            function callback() {  
+               setTimeout(function() {  
+                  $( "#effect-1" ).removeAttr( "style" ).hide().fadeIn();  
+               }, 1000 );  
+            };  
+            // set effect from select menu value  
+            $( "#button-1" ).click(function() {  
+               runEffect();  
+               return false;  
+            });  
+         });
+         $(function() {  
+            $('#btnSwitch').click(function(){  
+               $(".NormalClass").switchClass("NormalClass","LargeClass",'fast');  
+               $(".LargeClass").switchClass("LargeClass","NormalClass",'fast');  
+               return false;  
+            });  
+         });
+      </script>  
+      <style>  
+        .LargeClass  
+         {  
+            font-family: NewTimesRoman;  
+            font-size: large;  
+            font-weight: bold;  
+            color: Red;  
+         }  
+         .NormalClass  
+         {  
+            font-family: Arial;  
+            font-size: small;  
+            font-weight: bold;  
+            color: Blue;  
+         }
+        .toggler-1 { width: 500px; height: 200px; }  
+            #button-1 { padding: .5em 1em; text-decoration: none; }  
+            #effect-1 { width: 240px; height: 160px; padding: 0.4em; position: relative; }  
+            #effect-1 h3 { margin: 0; padding: 0.4em; text-align: center; }  
+
+         #accordion-5{font-size: 14px;}
+         .ui-menu {  
+            width: 200px;  
+         }  
+      </style>
+      <style>  
+        #spinner-1 input {width: 100px} 
+        .ui-widget-header,.ui-state-default, ui-button{  
+           background:#b9cd6d;  
+           border: 1px solid #b9cd6d;  
+           color: #FFFFFF;  
+           font-weight: bold;  
+        }  
+        .ui-widget-header {  
+            background: blue;  
+            border: 1px solid #DDDDDD;  
+            color: #333333;  
+            font-weight: bold;  
+         }
+         #tabs-1{font-size: 14px;}  
+         .ui-widget-header {  
+            background:lightpink;  
+            border: 1px solid #b9cd6d;  
+            color: lightyellow;  
+            font-weight: bold;  
+         }
+        
+         .toggler { width: 500px; height: 200px; }  
+         #button { padding: .5em 1em; text-decoration: none; }  
+         #effect { width: 240px; height: 155px; padding: 0.4em; position: relative; }  
+         #effect h3 { margin: 0; padding: 0.4em; text-align: center; }  
+         .toggler { width: 500px; height: 200px; }  
+         #button { padding: .5em 1em; text-decoration: none; }  
+         #effect { width: 240px; height: 155px; padding: 0.4em; position: relative; }
+         .elemClass {  
+            width: 300px;  
+            height: 100px;  
+            background-color: #76eec6;  
+         }  
+         .myClass {  
+            font-size: 30px; background-color: #eed5b7; color: #0000ee;  
+         }
+         .elemClass {  
+            width: 300px;  
+            height: 100px;  
+            background-color: #76eec6;  
+         }  
+         .myClass {  
+            font-size: 30px; background-color: #eed5b7; color: #0000ee;  
+         }  
+        .toggler { width: 500px; height: 200px; position: relative; }  
+        #button { padding: .5em 1em; text-decoration: none; }  
+        #effect { width: 240px; height: 135px; padding: 0.4em; position: relative; background: #fff; }  
+        #effect h3 { margin: 0; padding: 0.4em; text-align: center; }  
+        #box-1 {  
+            height: 50px;  
+            width: 100px;  
+            background: #7fffd4;  
+         }  
+     </style>  
+     <!-- Javascript -->  
+     <script>  
+       $(function() {  
+            function runEffect() {  
+               $( "#effect" ).toggle('explode', 300);  
+            };  
+            $( "#button" ).click(function() {  
+               runEffect();  
+               return false;  
+            });  
+         });
+        $(function() {  
+            // run the currently selected effect  
+            function runEffect() {  
+               // run the effect  
+               $( "#effect" ).show( "shake", {times: 15,distance: 200}, 1000, callback);  
+            };  
+            //callback function to bring a hidden box back  
+            function callback() {  
+               setTimeout(function() {  
+                  $( "#effect:visible" ).removeAttr( "style" ).fadeOut();  
+               }, 1000 );  
+            };  
+            $( "#button" ).click(function() {  
+               runEffect();  
+               return false;  
+            });  
+            $( "#effect" ).hide();  
+         });
+        $(function() {  
+            $( "#spinner-1" ).spinner();  
+         });
+        $(function() {  
+           $( "#dialog-1" ).dialog({  
+              autoOpen: false,    
+           });  
+           $( "#opener" ).click(function() {  
+              $( "#dialog-1" ).dialog( "open" );  
+           });  
+        });
+        $(function() {  
+            $( "#menu-1" ).menu();  
+         });
+         $(function() {  
+            $( "#progressbar-1" ).progressbar({  
+               value: 30  
+            });  
+         });
+         $(function() {  
+            $( "#tabs-1" ).tabs();  
+         });
+         $(function() {  
+        $("#tooltip-1").tooltip();  
+        $("#tooltip-2").tooltip();  
+        });  
+        $(document).ready(function() {  
+            $('.button').click(function() {  
+               if (this.id == "add") {  
+                  $('#animTarget').addClass("myClass", "fast")  
+               } else {  
+               $('#animTarget').removeClass("myClass", "fast")  
+               }  
+            })  
+         });
+         $(document).ready(function() {  
+            $('.button').click(function() {  
+               if (this.id == "add") {  
+                  $('#animTarget').addClass("myClass", "fast")  
+               } else {  
+               $('#animTarget').removeClass("myClass", "fast")  
+               }  
+            })  
+         });  
+         $(function() {  
+        var state = true;  
+        $( "#button" ).click(function() {  
+        if ( state ) {  
+            $( "#effect" ).animate({  
+            backgroundColor: "#aa0000",  
+            color: "#fff",  
+            width: 500  
+            }, 1000 );  
+        } else {  
+            $( "#effect" ).animate({  
+            backgroundColor: "#fff",  
+            color: "#000",  
+            width: 240  
+            }, 1000 );  
+        }  
+        state = !state;  
+        });  
+        });
+        $(function() {  
+        if ( !$( "<canvas>" )[0].getContext ) {  
+        $( "<div>" ).text(  
+            "Your browser doesn't support canvas, which is required for this demo."  
+        ).appendTo( "#graphs" );  
+        return;  
+        }  
+    var i = 0,  
+        width = 100,  
+        height = 100;  
+    $.each( $.easing, function( name, impl ) {  
+        var graph = $( "<div>" ).addClass( "graph" ).appendTo( "#graphs" ),  
+            text = $( "<div>" ).text( ++i + ". " + name ).appendTo( graph ),  
+            wrap = $( "<div>" ).appendTo( graph ).css( 'overflow', 'hidden' ),  
+            canvas = $( "<canvas>" ).appendTo( wrap )[ 0 ];  
+    canvas.width = width;  
+        canvas.height = height;  
+        var drawHeight = height * 0.8,  
+            cradius = 10;  
+            ctx = canvas.getContext( "2d" );  
+        ctx.fillStyle = "black";  
+    // draw background  
+        ctx.beginPath();  
+        ctx.moveTo( cradius, 0 );  
+        ctx.quadraticCurveTo( 0, 0, 0, cradius );  
+        ctx.lineTo( 0, height - cradius );  
+        ctx.quadraticCurveTo( 0, height, cradius, height );  
+        ctx.lineTo( width - cradius, height );  
+        ctx.quadraticCurveTo( width, height, width, height - cradius );  
+        ctx.lineTo( width, 0 );  
+        ctx.lineTo( cradius, 0 );  
+        ctx.fill();  
+    // draw bottom line  
+        ctx.strokeStyle = "#555";  
+        ctx.beginPath();  
+        ctx.moveTo( width * 0.1, drawHeight + .5 );  
+        ctx.lineTo( width * 0.9, drawHeight + .5 );  
+        ctx.stroke();  
+    // draw top line  
+        ctx.strokeStyle = "#555";  
+        ctx.beginPath();  
+        ctx.moveTo( width * 0.1, drawHeight * .3 - .5 );  
+        ctx.lineTo( width * 0.9, drawHeight * .3 - .5 );  
+        ctx.stroke();  
+    // plot easing  
+        ctx.strokeStyle = "white";  
+        ctx.beginPath();  
+        ctx.lineWidth = 2;  
+        ctx.moveTo( width * 0.1, drawHeight );  
+        $.each( new Array( width ), function( position ) {  
+            var state = position / width,  
+            val = impl( state, position, 0, 1, width );  
+            ctx.lineTo( position * 0.8 + width * 0.1,  
+            drawHeight - drawHeight * val * 0.7 );  
+        });  
+        ctx.stroke();  
+    // animate on click  
+        graph.click(function() {  
+            wrap  
+            .animate( { height: "hide" }, 2000, name )  
+            .delay( 800 )  
+            .animate( { height: "show" }, 2000, name );  
+        });  
+    graph.width( width ).height( height + text.height() + 10 );  
+        });  
+    });  
+    $(document).ready(function() {  
+            $('#box-1').click(function() {  
+               $( "#box-1" ).effect( "shake", {  
+                  times: 10,  
+                  distance: 150  
+               }, 3000, function() {  
+               $( this ).css( "background", "#ff4040" );  
+            });  
+         });  
+      });  
+     </script>  
+   </head>  
+   <body>
+    <h1>Accordion</h1>  
+      <div id="accordion-5">
+         <h3>What is Java?</h3>  
+            <div>  
+               <p>  
+                Java is a simple, object oriented, concurrent and general purpose programming language.   
+                Some other important features of java are robust, secure, portable, interactive and high performance.   
+                Java was developed by Sun Microsystems in 1995 since then it has become very popular due to its feature  
+                like platform independent and robust in the case of memory management.  
+               </p>  
+            </div>  
+            <h3>Why is it called Platform?</h3>  
+            <div>  
+               <p>  
+               Because java has its own run time environment (JRE) and API so it is called platform.    
+               </p>  
+            </div>  
+         </div>  
+         <br><br>
+         
+         <div style="margin-top:30px">  
+            <input type="radio" name="disable" id="disableaccordion"    
+               value="disable">Disable accordion  
+            <input type="radio" name="disable" id="enableaccordion" checked   
+               value="enable">Enable accordion  
+         </div>  
+         <br>
+         <h1>JQ UI Button</h1>
+         <button id="button-6">  
+            Button with icon only  
+         </button>  
+         <button id="button-7">  
+            Button Disabled  
+         </button>  
+         <button id="button-8">  
+            Button with two icons  
+         </button>
+         <br><br>
+         <h1>JQ UI datepicker</h1>
+         <p>Enter DOB: <input type="text" id="datepicker-1"></p>
+         <br><br>
+         <h1>JQ UI Dialog</h1>
+         <div id="dialog-1" title="Movie Title:Psycho (1960)">"A boy's best friend is his mother." </div>  
+      <button id="opener">Open Dialog</button>
+
+      <br><br>
+      <h1>JQ UI Menu</h1>
+      <ul id="menu-1">  
+        <li><a href="#">C</a></li>  
+        <li><a href="#">C++</a></li>  
+        <li><a href="#">Java</a>  
+           <ul>  
+              <li><a href="#">Core Java</a></li>  
+              <li><a href="#">J2EE</a></li>  
+              <li><a href="#">Spring</a></li>  
+              <li><a href="#">Hibernate</a></li>  
+              <li><a href="#">Struts</a></li>  
+           </ul>  
+        </li>
+     </ul>
+     <br><br>
+     <h1>JQ UI progressbar</h1>
+     <div id="progressbar-1"></div>
+     <br><br>
+     <h1>JQ UI Slider</h1>
+     <div id="slider-2"></div> 
+
+     <br><br>
+     <h1>JQ UI Spinner</h1>
+     <div id="example">  
+        <input type="text" id="spinner-1" value="0" />  
+     </div>
+
+     <br><br>
+     <h1>JQ UI Tabs</h1>
+     <div id="tabs-1">  
+        <ul>  
+           <li><a href="#tabs-2">Poem</a></li>  
+           <li><a href="#tabs-3">Joke</a></li>  
+           <li><a href="#tabs-4">Quote</a></li>  
+        </ul>  
+        <div id="tabs-2">  
+           <p>Twinkle, twinkle, little star,<br/>  
+            How I wonder what you are.<br/>  
+            Up above the world so high,<br/>  
+            Like a diamond in the sky.<br/>  
+            Twinkle, twinkle, little star,<br/>  
+            How I wonder what you are!<br/>  
+            </p>  
+                    </div>  
+                    <div id="tabs-3">  
+            <p>Man said to God --- Why did you make women so beautiful?<br/>  
+            God said to man --- So that you will love them.<br/>  
+            Man said to God --- But why did you make them so dumb?<br/>   
+            God said to man --- So that they will love you.<br/> </p>  
+                    </div>  
+                    <div id="tabs-4">  
+                    <p>" The whole secret of existence is to have no fear."  
+            Buddha</p>  
+            </div>    
+
+     </div>
+
+     <br><br>
+            <h1>JQ UI Tooltip</h1>
+            <label for="comment">What is your comment:</label>  
+            <input id="tooltip-1" title="We are asking your comment just for feedback">  
+            <p><a id="tooltip-2" href="#" title="JavaTpoint is the best tutorial website.">  
+            I also have a tooltip  
+            </a></p>
+
+    <br><br>
+    <h1>JQ UI Hide</h1>
+    <div class="toggler-1">  
+        <div id="effect-1" class="ui-widget-content ui-corner-all">  
+           <h3 class="ui-widget-header ui-corner-all">Hide</h3>  
+           <p>  
+              JavaTpoint provides easy and point to point learning of various tutorials such as Java Tutorial, Core Java Tutorial, Android, Design Pattern, JavaScript, AJAX, SQL, Cloud Computing, Python etc.  
+           </p>  
+        </div>  
+        </div>  
+        <a href="#" id="button-1" class="ui-state-default ui-corner-all">Shake Effect Hide</a>
+
+        <br><br>
+        <h1>JQ UI Show</h1>
+        <div class="toggler">  
+            <div id="effect" class="ui-widget-content ui-corner-all">  
+               <h3 class="ui-widget-header ui-corner-all">Show</h3>  
+               <p>  
+                JavaTpoint provides easy and point to point learning of various tutorials such as   
+                Java Tutorial, Core Java Tutorial, Android, Design Pattern, JavaScript, AJAX, Python etc.  
+               </p>  
+            </div>  
+         </div>  
+         <a href="#" id="button" class="ui-state-default ui-corner-all">Show method with Shake effect</a>
+         <br><br><br>
+         <h1>JQ UI Toggle</h1>
+         <div class="toggler">  
+            <div id="effect" class="ui-widget-content ui-corner-all">  
+               <h3 class="ui-widget-header ui-corner-all">Toggle</h3>  
+               <p>  
+               JavaTpoint provides easy and point to point learning of various tutorials such as   
+              Java Tutorial, Core Java Tutorial, Android, Design Pattern, JavaScript, AJAX, SQL, Python etc.  
+               </p>  
+            </div>  
+        </div>  
+        <a href="#" id="button" class="ui-state-default ui-corner-all">Togglemethod with explode effect</a>
+
+        <br><br>
+        <h1>JQ UI Add Class</h1>
+        <div id=animTarget class="elemClass">  
+            Hello! JavaTpoint  
+         </div>  
+         <button class="button" id="add">Add Class</button>  
+         <button class="button" id="remove">Remove Class</button>
+
+         <br><br>
+         <h1>JQ UI Remove Class</h1>
+         <div id=animTarget class="elemClass">  
+            Hello! JavaTpoint  
+         </div>  
+         <button class="button" id="add">Add Class</button>  
+         <button class="button" id="remove">Remove Class</button>  
+
+         <br><br>
+         <h1>JQ UI Switch Class</h1>
+         <div class="NormalClass">  
+            You are here at JavaTpoint  
+          </div>  
+          <div class="NormalClass">  
+            JavaTpoint is commited to provide easy and point to point learning of various tutorials.  
+          </div>  
+          <br />  
+          <input type="button" id="btnSwitch" value="Switch Class" />  
+
+          <br><br>
+          <h1>JQ UI Color Animate</h1>
+          <div class="toggler">  
+            <div id="effect" class="ui-widget-content ui-corner-all">  
+              <h3 class="ui-widget-header ui-corner-all">Animate</h3>  
+              <p>  
+             jQuery is a fast, small, cross-platform and feature-rich JavaScript library. It is designed to simplify the client-side scripting of HTML.  
+          </p>  
+          </div>  
+          </div>  
+          <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>  
+
+          <br><br>
+          <h1>JQ UI Easing</h1>
+          <div id="graphs"></div>  
+
+          <br><br>
+          <h1>JQ UI Effect</h1>
+          <div id="box-1">Click here to<br/><b>Shake Me!</b></div>
+          
+    </body>  
+</html>  
