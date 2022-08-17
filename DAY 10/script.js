@@ -47,3 +47,7 @@ async function greet(){
 }
 
 greet();
+
+function Func()  {  
+    document.getElementById("example").innerHTML=Math.sqrt(81);
+}    
