@@ -1,0 +1,59 @@
+<!-- TASK ->  We need to implement different types of function definitions on button click, we also need to add buttons using bootstrap, need to use html semantic tags as well-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions implementation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <style>
+        body{
+            text-align: center;
+            align-items: center;
+        }
+        h2{
+            color: brown;
+        }
+        footer{
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgb(192, 194, 194);
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>This is made just for functions implementation on different button clicks</h2>
+        </div>
+    </header>
+    <article>
+        <h5>Find the factorial of a number</h5>
+        <input id="factInput" type="number" placeholder="Enter a number">
+        <button onclick="printFact()" class="calFact btn btn-outline-secondary">Button 1</button>
+        <p id="factP"></p>
+    </article>
+    <article>
+        <h5>Fill out your details and submit it</h5>
+        <form>
+            Name: <input id="nameInp" type="text" placeholder="Enter Your Name">
+            Email: <input id="emailInp" type="email" placeholder="Your Email Here">
+        </form>
+        <button onclick="getAlert()" class="btn m-3 btn-outline-secondary">Submit</button>
+    </article>
+    <article>
+        <h5>Write your feedback in the below textarea</h5>
+        <textarea id="textArea" rows="3"></textarea>
+        <button onclick="showFeedback()" class="btn m-3 btn-outline-secondary">Show Feedback</button>
+        <p id="feedback"></p>
+    </article>
+
+
+    <footer>Made by Naina Upadhyay - Bhavna Training Bootcamp</footer>
+    <script src="./script.js"></script>
+</body>
+</html>
