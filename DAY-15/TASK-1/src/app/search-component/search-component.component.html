@@ -1,0 +1,129 @@
+<style>
+    .navbar-brand{
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: white!important;
+    }
+    .nav-link{
+        color: white!important;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    .search-outer-div{
+        background: url("../../assets/cover-image.jpg");
+        padding: 15px 0 80px;
+        height: 390px;
+    }
+    .outer-bg-div{
+      background: rgba(0, 0, 0, 0.5);
+      height: 390px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 0;
+    }
+    .searchbox-div{
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    .searchbox-div h1{
+        color: white;
+        font-weight: 800;
+        font-size: 5rem;
+        font-style: italic;
+    }
+    .searchbox-div p{
+        font-size: 2rem;
+        color: white;
+        font-weight: 500;
+    }
+    .searchbox-inner-div{
+        background-color: white;
+        width: 774px;
+        margin: auto;
+        padding: 5px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        z-index: 1;
+    }
+    .location-dropdown {
+        list-style-type: none;
+    }
+    .location-dropdown i{
+        color: #ff7e8b;
+        font-size: 20px;
+    }
+    .location-dropdown a{
+        color: rgb(130, 130, 130)!important;
+        font-size: 15px;
+    }
+    .vertical-border{
+        height: 15px;
+        border: 0.05rem solid rgb(207, 207, 207);
+    }
+    .inputcomp{
+        border-style: none;
+        width: 400px;
+    }
+    .search-icon{
+      color: rgb(130, 130, 130);
+    }
+</style>
+
+<div class="search-outer-div">
+  <div class="outer-bg-div">
+
+  </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><i class="bi bi-phone-fill"></i> Get the App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link">Investor Relations</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Add restaurant</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Log in</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="searchbox-div">
+        <h1 class="my-3">zomato</h1>
+        <p>Discover the best food and drinks in Dehradun</p>
+      </div>
+      <div class="d-flex justify-content-space-around align-items-center searchbox-inner-div">
+        <div class="dropdown-searchdiv">
+            <ul class="my-auto">
+            <li class="nav-item dropdown location-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-geo-alt-fill"></i>
+                  Dehradun
+                </a>
+            </li></ul>
+        </div>
+        <div class="vertical-border"></div>
+        <div class="search-icon">
+            <i class="bi bi-search"></i>
+        </div>
+        <div class="search-box">
+            <input class="me-2 inputcomp" type="search" placeholder="Search for restaurant, cuisine or a dish" aria-label="Search">
+        </div>
+        
+        
+      
+      </div>
+</div>

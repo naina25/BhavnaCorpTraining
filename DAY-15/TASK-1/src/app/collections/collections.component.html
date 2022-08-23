@@ -1,0 +1,97 @@
+<style>
+    .head{
+        font-weight: 500;
+        font-size: 35px;
+    }
+    .collections-outer .head-inner p{
+        font-size: 17px;
+    }
+    .head-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    .head-inner a, .head-inner i{
+        text-decoration: none;
+        color: #ff869e;
+    }
+    .card{
+        border: 0;
+        border-radius: 10px;
+    }
+    .card-img{
+        width: 100%;
+        height: 25vw;
+        object-fit: cover;
+        border-radius: 10px;
+        opacity: 0.6;
+    }
+    .card-img-overlay{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .inner-card-text{
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+<div class="container my-5 collections-outer">
+    <h2 class="head">Collections</h2>
+    <div class="head-inner">
+        <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Dehradun, based on trends</p>
+        <div class="d-flex justify-content-space-between">
+            <a href="#">All collections in Dehradun</a>
+            <i class="bi bi-caret-right-fill"></i>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-3 px-1 ">
+            <div class="card bg-dark text-white">
+                <img src="../../assets/collection1.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Trending This Week</h5>
+                  <div class="inner-card-text">
+                    <p class="card-text">30 Places</p><i class="bi bi-caret-right-fill"></i>
+                  </div>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-3 px-1">
+            <div class="card bg-dark text-white">
+                <img src="../../assets/collection2.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Best of Dehradun</h5>
+                  <div class="inner-card-text">
+                    <p class="card-text">23 Places</p><i class="bi bi-caret-right-fill"></i>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-3 px-1">
+            <div class="card bg-dark text-white">
+                <img src="../../assets/collection3.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Sweet Tooth</h5>
+                  <div class="inner-card-text">
+                    <p class="card-text">6 Places</p><i class="bi bi-caret-right-fill"></i>
+                  </div>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-3 px-1">
+            <div class="card bg-dark text-white">
+                <img src="../../assets/colection4.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Family Friendly</h5>
+                  <div class="inner-card-text">
+                    <p class="card-text">17 Places</p><i class="bi bi-caret-right-fill"></i>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+</div>
