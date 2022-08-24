@@ -1,0 +1,14 @@
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\bin\Debug\netcoreapp3.1\DAY-16_TASK1.exe
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\bin\Debug\netcoreapp3.1\DAY-16_TASK1.deps.json
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\bin\Debug\netcoreapp3.1\DAY-16_TASK1.runtimeconfig.json
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\bin\Debug\netcoreapp3.1\DAY-16_TASK1.runtimeconfig.dev.json
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\bin\Debug\netcoreapp3.1\DAY-16_TASK1.dll
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\bin\Debug\netcoreapp3.1\DAY-16_TASK1.pdb
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\obj\Debug\netcoreapp3.1\DAY-16_TASK1.csproj.AssemblyReference.cache
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\obj\Debug\netcoreapp3.1\DAY-16_TASK1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\obj\Debug\netcoreapp3.1\DAY-16_TASK1.AssemblyInfoInputs.cache
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\obj\Debug\netcoreapp3.1\DAY-16_TASK1.AssemblyInfo.cs
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\obj\Debug\netcoreapp3.1\DAY-16_TASK1.csproj.CoreCompileInputs.cache
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\obj\Debug\netcoreapp3.1\DAY-16_TASK1.dll
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\obj\Debug\netcoreapp3.1\DAY-16_TASK1.pdb
+C:\Users\naina.upadhyay\source\repos\DAY-16_TASK1\DAY-16_TASK1\obj\Debug\netcoreapp3.1\DAY-16_TASK1.genruntimeconfig.cache
