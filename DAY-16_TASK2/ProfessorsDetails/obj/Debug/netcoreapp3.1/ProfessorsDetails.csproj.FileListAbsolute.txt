@@ -1,0 +1,10 @@
+C:\Bhavna training\BhavnaCorpTraining\DAY-16_TASK2\ProfessorsDetails\bin\Debug\netcoreapp3.1\ProfessorsDetails.deps.json
+C:\Bhavna training\BhavnaCorpTraining\DAY-16_TASK2\ProfessorsDetails\bin\Debug\netcoreapp3.1\ProfessorsDetails.dll
+C:\Bhavna training\BhavnaCorpTraining\DAY-16_TASK2\ProfessorsDetails\bin\Debug\netcoreapp3.1\ProfessorsDetails.pdb
+C:\Bhavna training\BhavnaCorpTraining\DAY-16_TASK2\ProfessorsDetails\obj\Debug\netcoreapp3.1\ProfessorsDetails.csproj.AssemblyReference.cache
+C:\Bhavna training\BhavnaCorpTraining\DAY-16_TASK2\ProfessorsDetails\obj\Debug\netcoreapp3.1\ProfessorsDetails.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bhavna training\BhavnaCorpTraining\DAY-16_TASK2\ProfessorsDetails\obj\Debug\netcoreapp3.1\ProfessorsDetails.AssemblyInfoInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\DAY-16_TASK2\ProfessorsDetails\obj\Debug\netcoreapp3.1\ProfessorsDetails.AssemblyInfo.cs
+C:\Bhavna training\BhavnaCorpTraining\DAY-16_TASK2\ProfessorsDetails\obj\Debug\netcoreapp3.1\ProfessorsDetails.csproj.CoreCompileInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\DAY-16_TASK2\ProfessorsDetails\obj\Debug\netcoreapp3.1\ProfessorsDetails.dll
+C:\Bhavna training\BhavnaCorpTraining\DAY-16_TASK2\ProfessorsDetails\obj\Debug\netcoreapp3.1\ProfessorsDetails.pdb
