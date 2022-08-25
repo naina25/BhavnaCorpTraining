@@ -1,0 +1,14 @@
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\bin\Debug\netcoreapp3.1\Task-1.exe
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\bin\Debug\netcoreapp3.1\Task-1.deps.json
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\bin\Debug\netcoreapp3.1\Task-1.runtimeconfig.json
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\bin\Debug\netcoreapp3.1\Task-1.runtimeconfig.dev.json
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\bin\Debug\netcoreapp3.1\Task-1.dll
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\bin\Debug\netcoreapp3.1\Task-1.pdb
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\obj\Debug\netcoreapp3.1\Task-1.csproj.AssemblyReference.cache
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\obj\Debug\netcoreapp3.1\Task-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\obj\Debug\netcoreapp3.1\Task-1.AssemblyInfoInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\obj\Debug\netcoreapp3.1\Task-1.AssemblyInfo.cs
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\obj\Debug\netcoreapp3.1\Task-1.csproj.CoreCompileInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\obj\Debug\netcoreapp3.1\Task-1.dll
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\obj\Debug\netcoreapp3.1\Task-1.pdb
+C:\Bhavna training\BhavnaCorpTraining\DAY-17\Task-1\Task-1\obj\Debug\netcoreapp3.1\Task-1.genruntimeconfig.cache
