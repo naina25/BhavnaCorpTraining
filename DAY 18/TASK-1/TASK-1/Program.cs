@@ -6,30 +6,40 @@ namespace TASK_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your choice - Press 1 for customers details, Press 2 for produts details");
-            string choice = Console.ReadLine();
+            string isRepeat = "y";
 
-            switch (choice)
+            while(isRepeat == "y" || isRepeat == "Y")
             {
-                case "1":
-                    Customer custObj = new Customer();
-                    Console.WriteLine("Enter the customers details: ");
-                    custObj.custId = int.Parse(Console.ReadLine());
-                    custObj.custName = Console.ReadLine();
-                    custObj.gender = Console.ReadLine();
-                    custObj.showDetails();
-                    break;
-                case "2":
-                    Products prodObj = new Products();
-                    Console.WriteLine("Enter the products details: ");
-                    prodObj.prodId = int.Parse(Console.ReadLine());
-                    prodObj.prodName = Console.ReadLine();
-                    prodObj.prodQuantity = Console.ReadLine();
-                    prodObj.prodBrand = Console.ReadLine();
-                    prodObj.showDetails();
-                    break;
+                Console.WriteLine("Enter your choice - Press 1 for customers details, Press 2 for produts details, press 3 for order details");
+                string choice = Console.ReadLine();
 
+                switch (choice)
+                {
+                    case "1":
+                        Customer custObj = new Customer();
+                        custObj.custDetails();
+                        custObj.showCustDetails();
+                        break;
+                    case "2":
+                        Products prodObj = new Products();
+                        prodObj.prodDetails();
+                        prodObj.showProdDetails();
+                        break;
+                    case "3":
+                        Order orderObj = new Order();
+                        orderObj.getOrderDetails();
+                        orderObj.showOrderDetails();
+                        break;
+                    default:
+                        Console.WriteLine("Please enter correct choice");
+                        break;
+                }
+
+                Console.WriteLine("Do you want to repeat? Y or N");
+
+                isRepeat = Console.ReadLine();
             }
+            
         }
     }
 }
