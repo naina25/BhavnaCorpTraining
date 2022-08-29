@@ -1,0 +1,23 @@
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Assesment 2.exe
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Assesment 2.deps.json
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Assesment 2.runtimeconfig.json
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Assesment 2.runtimeconfig.dev.json
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Assesment 2.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Assesment 2.pdb
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\obj\Debug\netcoreapp3.1\Assesment 2.csproj.AssemblyReference.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\obj\Debug\netcoreapp3.1\Assesment 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\obj\Debug\netcoreapp3.1\Assesment 2.AssemblyInfoInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\obj\Debug\netcoreapp3.1\Assesment 2.AssemblyInfo.cs
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\obj\Debug\netcoreapp3.1\Assesment 2.csproj.CoreCompileInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\obj\Debug\netcoreapp3.1\Assesment 2.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\obj\Debug\netcoreapp3.1\Assesment 2.pdb
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\obj\Debug\netcoreapp3.1\Assesment 2.genruntimeconfig.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\CommonCls.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Doctors.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Doctors.pdb
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\CommonCls.pdb
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\obj\Debug\netcoreapp3.1\Assesment 2.csproj.CopyComplete
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Patients.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Patients.pdb
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Beds.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Assesment 2\bin\Debug\netcoreapp3.1\Beds.pdb

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Doctors/1.0.0": {
+        "dependencies": {
+          "CommonCls": "1.0.0"
+        },
+        "runtime": {
+          "Doctors.dll": {}
+        }
+      },
+      "CommonCls/1.0.0": {
+        "runtime": {
+          "CommonCls.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Doctors/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonCls/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

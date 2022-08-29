@@ -1,0 +1,9 @@
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Beds\bin\Debug\netcoreapp3.1\Beds.deps.json
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Beds\bin\Debug\netcoreapp3.1\Beds.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Beds\bin\Debug\netcoreapp3.1\Beds.pdb
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Beds\obj\Debug\netcoreapp3.1\Beds.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Beds\obj\Debug\netcoreapp3.1\Beds.AssemblyInfoInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Beds\obj\Debug\netcoreapp3.1\Beds.AssemblyInfo.cs
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Beds\obj\Debug\netcoreapp3.1\Beds.csproj.CoreCompileInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Beds\obj\Debug\netcoreapp3.1\Beds.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Beds\obj\Debug\netcoreapp3.1\Beds.pdb

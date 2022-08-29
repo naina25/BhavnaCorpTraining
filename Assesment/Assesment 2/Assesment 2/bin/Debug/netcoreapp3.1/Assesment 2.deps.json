@@ -1,0 +1,74 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Assesment 2/1.0.0": {
+        "dependencies": {
+          "Beds": "1.0.0",
+          "Doctors": "1.0.0",
+          "Patients": "1.0.0"
+        },
+        "runtime": {
+          "Assesment 2.dll": {}
+        }
+      },
+      "Beds/1.0.0": {
+        "runtime": {
+          "Beds.dll": {}
+        }
+      },
+      "CommonCls/1.0.0": {
+        "runtime": {
+          "CommonCls.dll": {}
+        }
+      },
+      "Doctors/1.0.0": {
+        "dependencies": {
+          "CommonCls": "1.0.0"
+        },
+        "runtime": {
+          "Doctors.dll": {}
+        }
+      },
+      "Patients/1.0.0": {
+        "dependencies": {
+          "CommonCls": "1.0.0"
+        },
+        "runtime": {
+          "Patients.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Assesment 2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Beds/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonCls/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Doctors/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Patients/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

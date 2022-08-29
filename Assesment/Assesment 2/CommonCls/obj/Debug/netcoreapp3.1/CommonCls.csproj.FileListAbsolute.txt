@@ -1,0 +1,10 @@
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\CommonCls\bin\Debug\netcoreapp3.1\CommonCls.deps.json
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\CommonCls\bin\Debug\netcoreapp3.1\CommonCls.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\CommonCls\bin\Debug\netcoreapp3.1\CommonCls.pdb
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\CommonCls\obj\Debug\netcoreapp3.1\CommonCls.csproj.AssemblyReference.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\CommonCls\obj\Debug\netcoreapp3.1\CommonCls.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\CommonCls\obj\Debug\netcoreapp3.1\CommonCls.AssemblyInfoInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\CommonCls\obj\Debug\netcoreapp3.1\CommonCls.AssemblyInfo.cs
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\CommonCls\obj\Debug\netcoreapp3.1\CommonCls.csproj.CoreCompileInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\CommonCls\obj\Debug\netcoreapp3.1\CommonCls.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\CommonCls\obj\Debug\netcoreapp3.1\CommonCls.pdb

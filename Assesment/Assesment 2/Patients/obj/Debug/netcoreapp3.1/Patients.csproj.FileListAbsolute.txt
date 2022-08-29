@@ -1,0 +1,13 @@
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\bin\Debug\netcoreapp3.1\Patients.deps.json
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\bin\Debug\netcoreapp3.1\Patients.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\bin\Debug\netcoreapp3.1\Patients.pdb
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\bin\Debug\netcoreapp3.1\CommonCls.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\bin\Debug\netcoreapp3.1\CommonCls.pdb
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\obj\Debug\netcoreapp3.1\Patients.csproj.AssemblyReference.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\obj\Debug\netcoreapp3.1\Patients.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\obj\Debug\netcoreapp3.1\Patients.AssemblyInfoInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\obj\Debug\netcoreapp3.1\Patients.AssemblyInfo.cs
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\obj\Debug\netcoreapp3.1\Patients.csproj.CoreCompileInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\obj\Debug\netcoreapp3.1\Patients.csproj.CopyComplete
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\obj\Debug\netcoreapp3.1\Patients.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assesment 2\Patients\obj\Debug\netcoreapp3.1\Patients.pdb

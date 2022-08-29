@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Assesment_2</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Beds\Beds.csproj" />
+    <ProjectReference Include="..\Doctors\Doctors.csproj" />
+    <ProjectReference Include="..\Patients\Patients.csproj" />
+  </ItemGroup>
+
+</Project>
