@@ -13,14 +13,16 @@ namespace Assesment_2
             string isrepeat = "Y";    //for repeating the process again and again
             int choice;
 
+            // Created three lists for each case -  doctors list, patients list, beds list
+
             List<DoctorsClass> doctorList = new List<DoctorsClass> { };
             List<Patientscls> patientList = new List<Patientscls> { };
             List<Bedscls> bedsList = new List<Bedscls> { };
 
+            //while loop for repeating the process as per the user's choice
             while (isrepeat =="Y" || isrepeat == "y")
             {
                 Console.WriteLine("Enter 1 for regeistering doctors, 2 for registering patients, 3 for booking bed for patient");
-
                 choice = int.Parse(Console.ReadLine());
 
                 switch (choice)
@@ -40,6 +42,7 @@ namespace Assesment_2
                         docobj.salaryInfo = int.Parse(Console.ReadLine());
                         docobj.reg_email = Console.ReadLine();
 
+                        //adding the above created doctor's object to the doctors List
                         doctorList.Add(docobj);
 
                         foreach (DoctorsClass doctor in doctorList)
@@ -62,6 +65,7 @@ namespace Assesment_2
                         patobj.getAddress = Console.ReadLine();
                         patobj.patientDepartment = Console.ReadLine();
 
+                        //adding the above created patient's object to the patients List
                         patientList.Add(patobj);
                         foreach (Patientscls patient in patientList)
                         {
@@ -78,6 +82,7 @@ namespace Assesment_2
                         bedsObj.bed_number = int.Parse(Console.ReadLine());
                         bedsObj.patient_id = int.Parse(Console.ReadLine());
 
+                        //adding the above created bed's object to the beds List
                         bedsList.Add(bedsObj);
                         foreach (Bedscls bed in bedsList)
                         {
@@ -89,6 +94,7 @@ namespace Assesment_2
                         break;
                 }
 
+                //For the process repetition
                 Console.WriteLine("Do you want to repeat the process again? Y or N");
                 isrepeat = Console.ReadLine();
 
