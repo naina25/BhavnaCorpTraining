@@ -6,6 +6,13 @@ namespace TASK_2
 {
     class Program
     {
+       
+        //-----------enum for categories (used for searching)--------------
+        enum categories
+        {
+            cosmetics = 1, footwear, garments
+        }
+
         static void Main(string[] args)
         {
             //connection string (db connection) 
@@ -17,6 +24,7 @@ namespace TASK_2
                 int loginId = int.Parse(Console.ReadLine());
                 string loginPWD = Console.ReadLine();
 
+                //object creation for admin login
                 SqlDataAdapter da = new SqlDataAdapter("select * from AdminLogin", con);
                 DataSet ds = new DataSet();
                 da.Fill(ds, "AdminLogin");
@@ -30,10 +38,11 @@ namespace TASK_2
                         {
                             string isRepeat = "Y";
 
+                            // loop for repeating the process
                             while (isRepeat.ToUpper() == "Y")
                             {
                                 Console.WriteLine("Successfully logged in!!");
-                                Console.WriteLine("Enter your choice: 1 for products data insertion, 2 for data deletion, 3 for data updation, 4 for displaying all products details");
+                                Console.WriteLine("Enter your choice: 1 for products data insertion, 2 for data deletion, 3 for data updation, 4 for displaying all products details, 5 for displaying products less than price 500");
 
                                 int choice = int.Parse(Console.ReadLine());
                                 Productcls product = new Productcls();
@@ -85,7 +94,46 @@ namespace TASK_2
                                         Console.WriteLine("Record updated successfully!!");
                                         break;
                                     case 4:
+                                        Console.WriteLine("Enter the product id to be searched");
+                                        product.prod_id = int.Parse(Console.ReadLine());
+
+                                        SqlDataAdapter da2 = new SqlDataAdapter("select * from products", con);
+                                        da2.Fill(ds, "products");
+
+                                        int num = ds.Tables[1].Rows.Count;
+                                        
+                                        for (int j = 0; j < num; j++)
+                                        {
+                                            if (product.prod_id.ToString() == ds.Tables[1].Rows[j][0].ToString())
+                                            {
+                                                Console.WriteLine("Product Name: " + ds.Tables[1].Rows[j][1].ToString());
+                                                Console.WriteLine("Product Price: " + ds.Tables[1].Rows[j][2].ToString());
+                                                Console.WriteLine("Product Quantity: " + ds.Tables[1].Rows[j][3].ToString());
+                                                Console.WriteLine("Category: " + Enum.GetName(typeof(categories), ds.Tables[1].Rows[j][4]));
+                                            }
+                                        }
                                         break;
+                                    case 5:
+                                        SqlDataAdapter da3 = new SqlDataAdapter("select * from products", con);
+                                        da3.Fill(ds, "products");
+
+                                        int num2 = ds.Tables[1].Rows.Count;
+
+                                        //----------predicate generic delegate-----------------
+                                        Predicate<int> obj3 = new Predicate<int>(product.isExists);
+                                        for(int y = 0; y< num2; y++)
+                                        {
+                                            if (obj3.Invoke(int.Parse(ds.Tables[1].Rows[y][2].ToString())))
+                                            {
+                                                Console.WriteLine("Product Name: " + ds.Tables[1].Rows[y][1].ToString());
+                                                Console.WriteLine("Product Price: " + ds.Tables[1].Rows[y][2].ToString());
+                                                Console.WriteLine("Product Quantity: " + ds.Tables[1].Rows[y][3].ToString());
+                                                Console.WriteLine("Category: " + Enum.GetName(typeof(categories), ds.Tables[1].Rows[y][4]));
+                                                Console.WriteLine();
+                                            }
+                                        }
+                                        break;
+
                                     default:
                                         break;
                                 }
