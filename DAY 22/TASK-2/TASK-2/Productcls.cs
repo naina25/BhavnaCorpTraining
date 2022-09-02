@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TASK_2
 {
-    public class Productcls:Iproducts
+    public class Productcls:Iproducts, Iinterface2
     {
         public int prod_id { get; set; }
         public string prod_name { get; set; }
@@ -22,6 +22,11 @@ namespace TASK_2
             {
                 return false;
             }
+        }
+
+        public void message(string msg)
+        {
+            Console.WriteLine("Successfully logged in!!");
         }
     }
 }

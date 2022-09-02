@@ -41,11 +41,16 @@ namespace TASK_2
                             // loop for repeating the process
                             while (isRepeat.ToUpper() == "Y")
                             {
-                                Console.WriteLine("Successfully logged in!!");
-                                Console.WriteLine("Enter your choice: 1 for products data insertion, 2 for data deletion, 3 for data updation, 4 for displaying all products details, 5 for displaying products less than price 500");
+                                Productcls product = new Productcls();
+
+                                //----------action delegate---------
+                                Action<string> obj2 = new Action<string>(product.message);
+                                obj2.Invoke("Successfully logged in!!");
+                                Console.WriteLine();
+                                Console.WriteLine("Enter your choice: 1 for products data insertion, 2 for data deletion, 3 for data updation, 4 for displaying product details, 5 for displaying all the products less than price 500");
 
                                 int choice = int.Parse(Console.ReadLine());
-                                Productcls product = new Productcls();
+                                
 
                                 switch (choice)
                                 {
@@ -131,6 +136,10 @@ namespace TASK_2
                                                 Console.WriteLine("Category: " + Enum.GetName(typeof(categories), ds.Tables[1].Rows[y][4]));
                                                 Console.WriteLine();
                                             }
+                                            else
+                                            {
+                                                Console.WriteLine("No Product exists");
+                                            }
                                         }
                                         break;
 
@@ -141,7 +150,12 @@ namespace TASK_2
                                 isRepeat = Console.ReadLine();
                             }
                         }
+                        else
+                        {
+                            Console.WriteLine("Wrong Password!!");
+                        }
                     }
+                    Console.WriteLine("Wrong Id!!");
                 }
 
             }
