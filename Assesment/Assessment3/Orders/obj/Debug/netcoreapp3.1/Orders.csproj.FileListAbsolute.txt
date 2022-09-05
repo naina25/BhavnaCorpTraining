@@ -1,0 +1,10 @@
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment3\Orders\bin\Debug\netcoreapp3.1\Orders.deps.json
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment3\Orders\bin\Debug\netcoreapp3.1\Orders.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment3\Orders\bin\Debug\netcoreapp3.1\Orders.pdb
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment3\Orders\obj\Debug\netcoreapp3.1\Orders.csproj.AssemblyReference.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment3\Orders\obj\Debug\netcoreapp3.1\Orders.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment3\Orders\obj\Debug\netcoreapp3.1\Orders.AssemblyInfoInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment3\Orders\obj\Debug\netcoreapp3.1\Orders.AssemblyInfo.cs
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment3\Orders\obj\Debug\netcoreapp3.1\Orders.csproj.CoreCompileInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment3\Orders\obj\Debug\netcoreapp3.1\Orders.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment3\Orders\obj\Debug\netcoreapp3.1\Orders.pdb
