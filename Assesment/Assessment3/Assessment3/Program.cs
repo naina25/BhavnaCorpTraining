@@ -44,7 +44,7 @@ namespace Assessment3
                         string repeat = "Y";
                         while (repeat.ToUpper() == "Y")
                         {
-                            Console.WriteLine("Enter 1 to register a franchise\nEnter 2 to get franchise details\nEnter 3 to get sales record");
+                            Console.WriteLine("Enter 1 to register a franchise\nEnter 2 to get franchise details\nEnter 3 to get sales record date wise");
 
                             int choice = int.Parse(Console.ReadLine());
 
@@ -96,7 +96,7 @@ namespace Assessment3
 
                                     break;
 
-                                //case 3 for displaying the sales of a particular franchise of a particular date
+                                //case 3 for displaying the total sales of a particular franchise of a particular date
                                 case 3:
                                     Console.WriteLine("Enter the franchise ID whose sales you want to display");
                                     franchiseObj.id = int.Parse(Console.ReadLine());

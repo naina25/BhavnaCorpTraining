@@ -1,0 +1,14 @@
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\bin\Debug\netcoreapp3.1\ATMapp.exe
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\bin\Debug\netcoreapp3.1\ATMapp.deps.json
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\bin\Debug\netcoreapp3.1\ATMapp.runtimeconfig.json
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\bin\Debug\netcoreapp3.1\ATMapp.runtimeconfig.dev.json
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\bin\Debug\netcoreapp3.1\ATMapp.dll
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\bin\Debug\netcoreapp3.1\ATMapp.pdb
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\obj\Debug\netcoreapp3.1\ATMapp.csproj.AssemblyReference.cache
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\obj\Debug\netcoreapp3.1\ATMapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\obj\Debug\netcoreapp3.1\ATMapp.AssemblyInfoInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\obj\Debug\netcoreapp3.1\ATMapp.AssemblyInfo.cs
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\obj\Debug\netcoreapp3.1\ATMapp.csproj.CoreCompileInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\obj\Debug\netcoreapp3.1\ATMapp.dll
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\obj\Debug\netcoreapp3.1\ATMapp.pdb
+C:\Bhavna training\BhavnaCorpTraining\DAY 25\ATMapp\ATMapp\obj\Debug\netcoreapp3.1\ATMapp.genruntimeconfig.cache
