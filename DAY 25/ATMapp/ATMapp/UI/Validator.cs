@@ -18,11 +18,13 @@ namespace ATMapp.UI
 
                 try
                 {
+                    //this converter variable 
                     var converter = TypeDescriptor.GetConverter(typeof(T));
                     if(converter != null)
                     {
                         return (T)converter.ConvertFromString(userInput);
                     }
+                    //this else block will execute if the given type by user cannot be converted into the specified type - i.e.wrong input type
                     else
                     {
                         return default;
