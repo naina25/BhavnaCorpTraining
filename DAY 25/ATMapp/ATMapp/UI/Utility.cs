@@ -8,7 +8,14 @@ namespace ATMapp.UI
 {
     public static class Utility
     {
+        private static long tranId;
         private static CultureInfo culture = new CultureInfo("en-IN");
+
+        public static long GetTransactionId()
+        {
+            return ++tranId;
+        }
+
         public static string GetSecretInput(string prompt)
         {
             bool isPrompt = true;
@@ -41,11 +48,14 @@ namespace ATMapp.UI
                     if(inputKey.Key == ConsoleKey.Backspace && input.Length > 0)
                     {
                         input.Remove(input.Length - 1, 1);
+                        Console.Write("\x1B[1D"); // Move the cursor one unit to the left
+                        Console.Write("\x1B[1P"); // Delete the character
                     }
                     else if(inputKey.Key != ConsoleKey.Backspace)
                     {
                         input.Append(inputKey.KeyChar);
                         Console.Write(asterics + "*");
+
                     }
                 
             }
