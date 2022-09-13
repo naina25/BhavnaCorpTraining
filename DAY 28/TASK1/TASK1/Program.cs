@@ -53,6 +53,16 @@ namespace TASK1
                         }
                     }
 
+                    //for reading the file--------------
+                    using (StreamReader sr = File.OpenText(empFile))
+                    {
+                        string s = "";
+                        while ((s = sr.ReadLine()) != null)
+                        {
+                            Console.WriteLine(s);
+                        }
+                    }
+
                     Console.WriteLine("Do you want to repeat? Y or N");
                     isrepeat =  Console.ReadLine();
 

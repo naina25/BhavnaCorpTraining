@@ -1,0 +1,10 @@
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment4\CarManufacturing\bin\Debug\netcoreapp3.1\CarManufacturing.deps.json
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment4\CarManufacturing\bin\Debug\netcoreapp3.1\CarManufacturing.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment4\CarManufacturing\bin\Debug\netcoreapp3.1\CarManufacturing.pdb
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment4\CarManufacturing\obj\Debug\netcoreapp3.1\CarManufacturing.csproj.AssemblyReference.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment4\CarManufacturing\obj\Debug\netcoreapp3.1\CarManufacturing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment4\CarManufacturing\obj\Debug\netcoreapp3.1\CarManufacturing.AssemblyInfoInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment4\CarManufacturing\obj\Debug\netcoreapp3.1\CarManufacturing.AssemblyInfo.cs
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment4\CarManufacturing\obj\Debug\netcoreapp3.1\CarManufacturing.csproj.CoreCompileInputs.cache
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment4\CarManufacturing\obj\Debug\netcoreapp3.1\CarManufacturing.dll
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment4\CarManufacturing\obj\Debug\netcoreapp3.1\CarManufacturing.pdb
