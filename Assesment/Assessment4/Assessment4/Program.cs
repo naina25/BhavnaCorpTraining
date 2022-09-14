@@ -69,12 +69,12 @@ namespace Assessment4
                                 if (emp.id.ToString() == ds.Tables["employeeDetails"].Rows[j][0].ToString())
                                 {
                                     emp.totalSalary = 0;
-                                    int totalworkinghrs = int.Parse(ds.Tables["employeeDetails"].Rows[j][1].ToString());
+                                    emp.totalWorkingHrs = int.Parse(ds.Tables["employeeDetails"].Rows[j][1].ToString());
                                     int salaryPerHour = int.Parse(ds.Tables["employeeDetails"].Rows[j][4].ToString());
 
                                     //calculating the total salary of an employee----------------------------
-                                    emp.totalSalary = totalworkinghrs > emp.minWorkingHrs ?
-                                        (totalworkinghrs - emp.minWorkingHrs) * 2 * salaryPerHour + emp.minWorkingHrs * salaryPerHour :
+                                    emp.totalSalary = emp.totalWorkingHrs > emp.minWorkingHrs ?
+                                        (emp.totalWorkingHrs - emp.minWorkingHrs) * 2 * salaryPerHour + emp.minWorkingHrs * salaryPerHour :
                                         emp.minWorkingHrs * salaryPerHour;
                                     
                                     //writing to the salary record file--------------------------------------

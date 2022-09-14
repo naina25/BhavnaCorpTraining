@@ -7,7 +7,6 @@ namespace Employee
     public class employee
     {
         public int id;
-        public string name;
         public int deptId;
         public int totalWorkingHrs;
         public int totalSalary;
