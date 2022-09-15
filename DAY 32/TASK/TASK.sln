@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TASK", "TASK\TASK.csproj", "{66C24826-5FAD-4CFA-A203-0F62C7B18D5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logicTest", "logicTest\logicTest.csproj", "{C96CCBF6-1397-4328-9242-7E125FB1FC44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66C24826-5FAD-4CFA-A203-0F62C7B18D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66C24826-5FAD-4CFA-A203-0F62C7B18D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66C24826-5FAD-4CFA-A203-0F62C7B18D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66C24826-5FAD-4CFA-A203-0F62C7B18D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C96CCBF6-1397-4328-9242-7E125FB1FC44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96CCBF6-1397-4328-9242-7E125FB1FC44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96CCBF6-1397-4328-9242-7E125FB1FC44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96CCBF6-1397-4328-9242-7E125FB1FC44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19F2236D-2CBA-4AF7-BBDB-90AC173C3809}
+	EndGlobalSection
+EndGlobal
