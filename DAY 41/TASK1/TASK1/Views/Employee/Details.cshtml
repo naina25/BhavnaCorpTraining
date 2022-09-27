@@ -1,0 +1,22 @@
+﻿@model TASK1.Models.EmployeeDetailsViewModel
+<html>
+    <head>
+        <title>@Model.Title</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div class="Heading">
+                <h2>@Model.Header</h2>
+            </div>
+            <div>
+                <p>Employee Id: @Model.employee.employeeId</p>
+                <p>Employee Name: @Model.employee.employeeName</p>
+                <p>Employee Gender: @Model.employee.gender</p>
+                <p>Employee Salary: @Model.employee.salary</p>
+                <p>Employee Department Id: @Model.department.departmentId</p>
+                <p>Department Name: @Model.department.departmentName</p>
+                <p>Total Number of Employees working in the department: @Model.department.totalEmployees</p>
+            </div>
+        </div>
+    </body>
+</html> 
