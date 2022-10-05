@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Assessment7.Models.Travel>
+
+@{
+    ViewData["Title"] = "TravelView";
+}
+
+<h1 style="text-align:center">Cab Allotment</h1>
+
+<p class="d-flex justify-content-center pt-2 pb-2">
+    <a asp-action="Create" class="btn btn-md btn-outline-success">Allot new cab</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.VehicleNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pickup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destination)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PassengerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VehicleNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Pickup)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Destination)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PassengerName)
+                </td>
+                <td>
+                    INR @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+                <td>
+                    @*<a asp-action="Edit" asp-route-id="@item.RouteId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.RouteId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.RouteId">Delete</a>*@
+                    <div class="btn-group">
+                        <a asp-action="Edit" asp-route-id="@item.RouteId" class="btn btn-sm btn-info">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.RouteId" class="btn btn-sm btn-primary ml-1">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.RouteId" class="btn btn-sm btn-danger ml-1">Delete</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
