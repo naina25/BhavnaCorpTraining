@@ -4,17 +4,17 @@
     ViewData["Title"] = "EmpView";
 }
 <style>
-    .avatar{
-        vertical-align:middle;
-        width:50px;
-        height:50px;
-        border-radius:50%;
+    .avatar {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
     }
 </style>
-<h1>EmpView</h1>
+<h1 style="text-align:center">Employee Details</h1>
 
-<p>
-    <a asp-action="Create" class="btn btn-sm btn-success ml-1">Create New</a>
+<p class="d-flex justify-content-center pt-2 pb-2">
+    <a class="btn btn-md btn-outline-success mx-auto" asp-action="Create">Add a new employee</a>
 </p>
 <table class="table">
     <thead>
@@ -22,7 +22,7 @@
             <th>
                 Profile Pic
             </th>
-            
+
             <th>
                 @Html.DisplayNameFor(model => model.EmpDesignation)
             </th>
@@ -41,46 +41,47 @@
             <th>
                 @Html.DisplayNameFor(model => model.Address)
             </th>
-          
-            
+
+
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                <img src="@item.ImageUrl" alt="" class="avatar" />
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EmpDesignation)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EmpName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EmpEmail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Dob)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Gender)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-           
-            <td>
-                @*@<a asp-action="Edit" asp-route-id="@item.EmployeeId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.EmployeeId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.EmployeeId">Delete</a>*@
-                <div class="btn-group">
-                    <a asp-action="Edit" asp-route-id="@item.EmployeeId" class="btn btn-sm btn-info">Edit</a>
-                    <a asp-action="Details" asp-route-id="@item.EmployeeId" class="btn btn-sm btn-primary ml-1">Details</a>
-                    <a asp-action="Delete" asp-route-id="@item.EmployeeId" class="btn btn-sm btn-danger ml-1">Delete</a>
-                </div>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@item.ImageUrl" alt="" class="avatar" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmpDesignation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmpName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmpEmail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dob)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+
+                <td>
+                    @*@<a asp-action="Edit" asp-route-id="@item.EmployeeId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.EmployeeId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.EmployeeId">Delete</a>*@
+                    <div class="btn-group">
+                        <a asp-action="Edit" asp-route-id="@item.EmployeeId" class="btn btn-sm btn-info">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.EmployeeId" class="btn btn-sm btn-primary ml-1">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.EmployeeId" class="btn btn-sm btn-danger ml-1">Delete</a>
+                    </div>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

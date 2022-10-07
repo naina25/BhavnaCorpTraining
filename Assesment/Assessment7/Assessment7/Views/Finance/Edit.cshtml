@@ -1,30 +1,27 @@
-﻿@model Assessment7.Models.Travel
+﻿@model Assessment7.Models.Finance
 
 @{
     ViewData["Title"] = "Edit";
 }
 
-<h2>Edit Journey Details</h2>
+<h1>Edit</h1>
+
+<h4>Finance</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="RouteId" />
+            <input type="hidden" asp-for="TransactionId" />
             <div class="form-group">
                 <label asp-for="VehicleNumber" class="control-label"></label>
                 <input asp-for="VehicleNumber" class="form-control" />
                 <span asp-validation-for="VehicleNumber" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Pickup" class="control-label"></label>
-                <input asp-for="Pickup" class="form-control" />
-                <span asp-validation-for="Pickup" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Destination" class="control-label"></label>
-                <input asp-for="Destination" class="form-control" />
-                <span asp-validation-for="Destination" class="text-danger"></span>
+                <label asp-for="VehicleName" class="control-label"></label>
+                <input asp-for="VehicleName" class="form-control" />
+                <span asp-validation-for="VehicleName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PassengerName" class="control-label"></label>
@@ -37,6 +34,16 @@
                 <span asp-validation-for="Amount" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="PaymentMode" class="control-label"></label>
+                <input asp-for="PaymentMode" class="form-control" />
+                <span asp-validation-for="PaymentMode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BillingDate" class="control-label"></label>
+                <input asp-for="BillingDate" class="form-control" />
+                <span asp-validation-for="BillingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
@@ -44,7 +51,7 @@
 </div>
 
 <div>
-    <a asp-action="TravelView">Back to List</a>
+    <a asp-action="FinanaceEntry">Back to List</a>
 </div>
 
 @section Scripts {

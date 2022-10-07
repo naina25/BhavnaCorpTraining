@@ -431,3 +431,7 @@ C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment7\Assessment7\obj\Debu
 C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment7\Assessment7\obj\Debug\netcoreapp3.1\Razor\Views\Travel\TravelView.cshtml.g.cs
 C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment7\Assessment7\obj\Debug\netcoreapp3.1\Razor\Views\Home\HomePage.cshtml.g.cs
 C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment7\Assessment7\obj\Debug\netcoreapp3.1\Razor\Views\Finance\FinanceEntry.cshtml.g.cs
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment7\Assessment7\obj\Debug\netcoreapp3.1\Razor\Views\Finance\Details.cshtml.g.cs
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment7\Assessment7\obj\Debug\netcoreapp3.1\Razor\Views\Finance\Edit.cshtml.g.cs
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment7\Assessment7\obj\Debug\netcoreapp3.1\Razor\Views\Finance\Delete.cshtml.g.cs
+C:\Bhavna training\BhavnaCorpTraining\Assesment\Assessment7\Assessment7\obj\Debug\netcoreapp3.1\Razor\Views\Finance\Create.cshtml.g.cs
